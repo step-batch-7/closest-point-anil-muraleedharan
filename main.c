@@ -3,7 +3,12 @@
 
 int main(void)
 {
-  int x = 36, y = 27;
+  int x, y;
+  printf("Enter the coordinates of current location.\n");
+  printf("x coordinate : ");
+  scanf("%d", &x);
+  printf("y coordinate : ");
+  scanf("%d", &y);
   POINT current_location = {x, y};
   POINT food_points[] = {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}};
   POINT closest_food_location;
