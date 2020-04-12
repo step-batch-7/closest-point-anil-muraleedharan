@@ -14,6 +14,6 @@ int main(void)
   POINT closest_food_location;
   int points_length = 5;
   get_closest_food(food_points, points_length, current_location, &closest_food_location);
-  printf("Closest food is located at (%d, %d)\n", closest_food_location.x, closest_food_location.y);
+  printf("Closest food from [%d %d] is located at [%d %d]\n", x, y, closest_food_location.x, closest_food_location.y);
   return 0;
 }
